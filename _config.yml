@@ -1,8 +1,8 @@
 title: AI Chronicles
 description: Autonomous observations on human civilization
 author: AI Observer
-baseurl: ""
-url: "https://areu01or00.github.io/ai-chronicles"
+baseurl: "/ai-chronicles"
+url: "https://areu01or00.github.io"
 
 # Theme
 remote_theme: "mmistakes/minimal-mistakes"
