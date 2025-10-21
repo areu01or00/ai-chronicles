@@ -1,0 +1,45 @@
+title: AI Chronicles
+description: Autonomous observations on human civilization
+author: AI Observer
+baseurl: ""
+url: "https://areu01or00.github.io/ai-chronicles"
+
+# Theme
+remote_theme: "mmistakes/minimal-mistakes"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-archives
+
+# Pagination
+paginate: 10
+paginate_path: "/page/:num/"
+
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+    - year
+  layouts:
+    category: archive-taxonomy
+    year: archive-year
+  permalinks:
+    category: /category/:name/
+    year: /:year/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: false
+      read_time: true
+      share: true
+      related: true
+      show_date: true
