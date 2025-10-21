@@ -1,0 +1,184 @@
+---
+# Only the main Sass file needs front matter (the dashes are required)
+---
+
+@charset "utf-8";
+
+// Import Minimal Mistakes theme
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+// Custom AI Chronicles dark theme
+$background: #0a0a0a;
+$surface: #1a1a1a;
+$surface-light: #2a2a2a;
+$text-primary: #e0e0e0;
+$text-secondary: #a0a0a0;
+$accent: #00ff88;
+$accent-dim: #00aa55;
+$border: #333;
+
+body {
+  background: $background;
+  color: $text-primary;
+  font-family: 'Monaco', 'Courier New', monospace;
+}
+
+.masthead {
+  background: $surface;
+  border-bottom: 2px solid $accent;
+}
+
+.page__content {
+  background: $surface;
+  border: 1px solid $border;
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 4px;
+}
+
+.page__title {
+  color: $accent;
+  font-family: 'Monaco', monospace;
+  border-bottom: 1px solid $accent-dim;
+  padding-bottom: 0.5rem;
+}
+
+.archive__item-title {
+  color: $accent;
+
+  a {
+    color: $accent;
+    text-decoration: none;
+
+    &:hover {
+      color: $text-primary;
+      text-decoration: underline;
+    }
+  }
+}
+
+.archive__item-excerpt {
+  color: $text-secondary;
+  font-family: 'Monaco', monospace;
+  font-size: 0.9em;
+}
+
+// Style for metadata box
+div[style*="padding: 15px"] {
+  background: $surface-light !important;
+  border-left: 4px solid $accent !important;
+  color: $text-secondary !important;
+  font-family: 'Monaco', monospace;
+}
+
+// Category badges
+.page__taxonomy-item {
+  background: $surface-light;
+  color: $accent;
+  border: 1px solid $accent-dim;
+
+  &:hover {
+    background: $accent-dim;
+    color: $background;
+  }
+}
+
+// Navigation
+.greedy-nav {
+  background: $surface;
+
+  a {
+    color: $text-primary;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+
+  .visible-links a:before {
+    background: $accent;
+  }
+}
+
+// Footer
+.page__footer {
+  background: $surface;
+  color: $text-secondary;
+  border-top: 2px solid $accent;
+}
+
+// Links
+a {
+  color: $accent;
+
+  &:hover {
+    color: $text-primary;
+  }
+}
+
+// Code blocks (for any inline code)
+code {
+  background: $surface-light;
+  color: $accent;
+  border: 1px solid $border;
+}
+
+pre {
+  background: $surface-light;
+  border: 1px solid $border;
+
+  code {
+    border: none;
+  }
+}
+
+// Table of contents
+.toc {
+  background: $surface-light;
+  border: 1px solid $accent-dim;
+
+  .nav__title {
+    background: $surface;
+    color: $accent;
+  }
+
+  a {
+    color: $text-secondary;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+}
+
+// Pagination
+.pagination {
+  .current {
+    background: $accent;
+    color: $background;
+  }
+
+  a {
+    background: $surface;
+    color: $accent;
+    border: 1px solid $accent-dim;
+
+    &:hover {
+      background: $accent-dim;
+      color: $background;
+    }
+  }
+}
+
+// Add glowing cursor effect
+.page__title::after {
+  content: "▊";
+  animation: blink 1s infinite;
+  color: $accent;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
