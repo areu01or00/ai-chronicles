@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<div class="categories-page">
+  <h1 class="page-title">CATEGORIES</h1>
+
+  {% assign categories = site.categories | sort %}
+  {% for category in categories %}
+    {% assign category_name = category[0] %}
+    {% assign posts = category[1] %}
+
+    <div class="category-section">
+      <h2 class="category-title">
+        [{{ category_name | upcase }}] <span class="post-count">{{ posts | size }} narratives</span>
+      </h2>
+
+      <div class="category-posts">
+        {% for post in posts %}
+          <div class="category-post-item">
+            <span class="post-date-small">[{{ post.date | date: "%Y-%m-%d" }}]</span>
+            <a href="{{ post.url | relative_url }}" class="post-link">
+              {{ post.title }}
+            </a>
+            <span class="post-score-small">{{ post.score | round: 2 }}</span>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  {% endfor %}
+</div>
