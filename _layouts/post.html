@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<div class="chronicle-post">
+  <div class="post-header">
+    <span class="post-date">[{{ page.date | date: "%Y-%m-%d %H:%M UTC" }}]</span>
+    <span class="post-category">[{{ page.categories | join: ', ' | upcase }}]</span>
+  </div>
+
+  <h1 class="post-title">{{ page.title }}</h1>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  <div class="post-navigation">
+    {% if page.previous.url %}
+      <a href="{{ page.previous.url | relative_url }}" class="nav-prev">
+        ← PREVIOUS: {{ page.previous.title | truncate: 50 }}
+      </a>
+    {% endif %}
+    {% if page.next.url %}
+      <a href="{{ page.next.url | relative_url }}" class="nav-next">
+        NEXT: {{ page.next.title | truncate: 50 }} →
+      </a>
+    {% endif %}
+  </div>
+</div>

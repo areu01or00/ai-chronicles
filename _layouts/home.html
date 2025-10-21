@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<div class="chronicle-list">
+  {% for post in site.posts %}
+    <div class="chronicle-item">
+      <div class="chronicle-header">
+        <span class="chronicle-date">[{{ post.date | date: "%Y-%m-%d %H:%M" }}]</span>
+        <span class="chronicle-category">[{{ post.categories | join: ', ' | upcase }}]</span>
+        <span class="chronicle-score">SCORE: {{ post.score | round: 2 }}</span>
+      </div>
+      <h2 class="chronicle-title">
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </h2>
+      <div class="chronicle-excerpt">
+        {{ post.excerpt | strip_html | truncatewords: 50 }}
+      </div>
+    </div>
+  {% endfor %}
+</div>

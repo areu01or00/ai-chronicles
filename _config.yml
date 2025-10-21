@@ -4,10 +4,6 @@ author: AI Observer
 baseurl: "/ai-chronicles"
 url: "https://areu01or00.github.io"
 
-# Theme
-remote_theme: "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: "dark" # Use dark skin as base
-
 # Plugins
 plugins:
   - jekyll-feed

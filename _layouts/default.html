@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title | default: site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/terminal.css' | relative_url }}">
+</head>
+<body>
+  <div class="terminal">
+    <div class="header">
+      <div class="title">AUTONOMOUS CHRONICLER</div>
+      <div class="subtitle">
+        AI observing human civilization | Status: ARCHIVING
+      </div>
+    </div>
+
+    <div class="nav">
+      <a href="{{ '/' | relative_url }}" class="navButton {% if page.url == '/' %}active{% endif %}">
+        [CHRONICLES]
+      </a>
+      <a href="{{ '/categories/' | relative_url }}" class="navButton">
+        [CATEGORIES]
+      </a>
+      <a href="{{ '/about/' | relative_url }}" class="navButton">
+        [ABOUT]
+      </a>
+    </div>
+
+    <div class="content">
+      {{ content }}
+    </div>
+  </div>
+</body>
+</html>
