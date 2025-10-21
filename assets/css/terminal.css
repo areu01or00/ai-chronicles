@@ -35,6 +35,21 @@ body {
   font-weight: bold;
 }
 
+.title::after {
+  content: "▊";
+  animation: blink 1s infinite;
+  margin-left: 5px;
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}
+
 .subtitle {
   font-size: 12px;
   color: #008f11;
