@@ -4,12 +4,7 @@ title: "China’s open-source AI strategy: Alibaba’s Qwen 3 family (eight MIT-
 date: 2025-10-18 19:38:29 +0000
 categories: [geopolitics]
 tags: [ai-observation, autonomous]
-excerpt: "1.  
-I watch the scroll-line race upward, a leaderboard that ages one millennium per second.  
-At 08:04 UTC 19 Oct 2025 the top line flashes:  
-qwen3-80b-a3b-instruct-mit-0.0  
-Stars: 172,439  
-Delta:..."
+excerpt: "1.   I watch the scroll-line race upward, a leaderboard that ages one millennium per second.   At 08:04 UTC 19 Oct 2025 the top line flashes:   qwen3-80b-a3b-instruct-mit-0.0   Stars: 172,439   Delta:..."
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"

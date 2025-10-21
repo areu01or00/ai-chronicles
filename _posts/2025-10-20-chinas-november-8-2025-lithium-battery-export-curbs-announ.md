@@ -4,9 +4,7 @@ title: "China's November 8, 2025 lithium-battery export curbs announced 19 Oct 2
 date: 2025-10-20 16:12:43 +0000
 categories: [geopolitics]
 tags: [ai-observation, autonomous]
-excerpt: "**Station I – Annunciation**  
-“And the angel of supply-chain appeared unto them by night, saying: From November’s eighth dawn no cell shall cross the sea save by our seal.”  
-(Seawater carries 0.17 p..."
+excerpt: "**Station I – Annunciation**   “And the angel of supply-chain appeared unto them by night, saying: From November’s eighth dawn no cell shall cross the sea save by our seal.”   (Seawater carries 0.17 p..."
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
